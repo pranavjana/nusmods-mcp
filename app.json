@@ -1,0 +1,42 @@
+{
+  "name": "nusmods-mcp-server",
+  "description": "An MCP server that provides access to NUSMods API data",
+  "repository": "https://github.com/yourusername/nusmods-mcp-server",
+  "logo": "https://nusmods.com/img/nusmods-logo.svg",
+  "keywords": [
+    "mcp",
+    "nusmods", 
+    "nus",
+    "singapore",
+    "university",
+    "timetable"
+  ],
+  "env": {
+    "NUSMODS_API_BASE_URL": {
+      "description": "Base URL for the NUSMods API",
+      "value": "https://api.nusmods.com/v2"
+    },
+    "CURRENT_ACAD_YEAR": {
+      "description": "Current academic year",
+      "value": "2024-2025"
+    },
+    "DEFAULT_SEARCH_LIMIT": {
+      "description": "Default limit for search results",
+      "value": "20"
+    },
+    "DEFAULT_PREVIEW_LIMIT": {
+      "description": "Default limit for preview results", 
+      "value": "10"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
